@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS</title>
+</head>
+<body>
+    <h1>
+        EJERCICIOS JS
+    </h1>
+    <ul>
+        <li>1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.</li>
+        <li>2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".</li>
+        <li>3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].</li>
+        <li>4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.</li>
+    </ul>
+    <script>
+        console.log("***** Problema 1 *****");
+
+        function NumCaracteres(cadena){
+                return console.log(cadena.length);
+        }
+        NumCaracteres("Hola Mundo, Muere Mundo");
+    </script>
+    <script>
+        console.log("***** Problema 2 *****");
+
+        function RecoCaracteres(cadena, recorte){
+                return console.log(cadena.slice(recorte));
+        }
+        RecoCaracteres("Hola Mundo", 6 );
+    </script>
+    <script>
+        console.log("***** Problema 3 *****");
+
+        function SeparaCadenas(cadena, separe){
+                return console.log(cadena.split(" ", separe));
+        }
+        SeparaCadenas("Hola Como Estas Chico Guapo", 5);
+    </script>
+    <script>
+        console.log("***** Problema 4*****");
+        
+        function Multiplicador(cadena, repetir){
+                return console.log(cadena.repeat(repetir));
+        }
+        Multiplicador("Hola Mundo ", 5);
+
+    </script>
+</body>
+</html>
